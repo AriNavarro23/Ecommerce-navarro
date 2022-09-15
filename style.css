@@ -17,7 +17,7 @@ body{
 header{
     display: flex;
     align-items: center;
-    padding: 20px 80px;
+    padding: 10px 50px;
     background: #E3E6F3;
     box-shadow: 0px 35px rgba(0, 0, 0, 0.06);
 }
@@ -26,6 +26,10 @@ header{
     display: flex;
     width: 100%;
     justify-content: flex-end;
+}
+
+.list-section{
+    padding-top: 1rem ;
 }
 
 .navBar li a{
@@ -57,6 +61,14 @@ a{
 
 
 
+/* SEARCH */
+
+#search{
+    max-width: 15rem;
+}
+
+
+
 
 /* SELECTOR */
 
@@ -65,8 +77,10 @@ a{
     text-align: center;
 }
 #selecNft{
-    width: 50%;
+    max-width: 15rem;
+    height: auto;
 }
+
 select{
     display: inline;
     text-align: center;
