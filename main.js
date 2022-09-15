@@ -9,12 +9,12 @@ const contenedorCarrito = document.getElementById('carrito-contenedor');
 const contadorCarrito = document.getElementById('contadorCarrito');
 const precioTotal = document.getElementById('precioTotal');
 
-const selecNft = document.getElementById('selecNft')
+//const selecNft = document.getElementById('selecNft')
 const buscador = document.getElementById('search')
 
 
 // filtro para buscar por talle
-selecNft.addEventListener('change',()=>{
+/*selecNft.addEventListener('change',()=>{
     console.log(selecNft.value);
     if (selecNft.value == 'all') {
         mostrarProductos(stockProductos)
@@ -22,7 +22,7 @@ selecNft.addEventListener('change',()=>{
         mostrarProductos(stockProductos.filter(el => el.nft == selecNft.value))
         console.log(stockProductos.filter(el => el.nft == selecNft.value));
     }
-})
+}) */
 
 
 //Buscador
@@ -36,10 +36,10 @@ buscador.addEventListener('input', ()=>{
 
 
 
-// Logica Ecommerce
+// Ecommerce logic
 
 mostrarProductos(stockProductos)
-// funcion donde uso DOM y el for of para mostrar los productos con su div e hijos.
+// Use DOM and FOR, I going to show products ( divs and children )
 function mostrarProductos (array) {
     contenedorProductos.innerHTML ='';
     for (const producto of array) {
@@ -58,7 +58,7 @@ function mostrarProductos (array) {
                         </div>`
         contenedorProductos.appendChild(div);
 
-        // llama a cada boton del producto a medida que hace el for of.
+        // call each product button with FOR
         let btnAgregar = document.getElementById(`botonAgregar${producto.id}`)
         // se queda escuchando cual de todos los productos hace "click".
         btnAgregar.addEventListener('click',()=>{
@@ -72,7 +72,7 @@ function mostrarProductos (array) {
 }
 
 
-
+/*
 function agregarAlCarrito(id) {
     let repetido = carritoDeCompras.find(item => item.id == id)
     if(repetido){
@@ -129,7 +129,6 @@ recuperar()
 
 
 
-
-
+*/
 
 
