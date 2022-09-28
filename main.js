@@ -14,7 +14,7 @@ const buscador = document.getElementById('search')
 
 
 // filtro para buscar por talle
-/*selecNft.addEventListener('change',()=>{
+selecNft.addEventListener('change',()=>{
     console.log(selecNft.value);
     if (selecNft.value == 'all') {
         mostrarProductos(stockProductos)
@@ -22,7 +22,8 @@ const buscador = document.getElementById('search')
         mostrarProductos(stockProductos.filter(el => el.nft == selecNft.value))
         console.log(stockProductos.filter(el => el.nft == selecNft.value));
     }
-}) */
+}) 
+
 
 
 //Buscador
