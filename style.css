@@ -215,4 +215,21 @@ select{
     outline: none;
 }
 
+
+
+
+
+
 /* FOOTER */
+
+
+.footer{
+    display: flex;
+}
+
+.link-rrpp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
