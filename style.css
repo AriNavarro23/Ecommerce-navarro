@@ -225,11 +225,18 @@ select{
 
 .footer{
     display: flex;
+    margin: 2rem;
 }
 
 .link-rrpp{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
+}
+
+.list-link{
+    display: flex;
+    flex-direction: column;
 }
