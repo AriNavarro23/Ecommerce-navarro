@@ -14,6 +14,13 @@ body{
     font-family: 'Hurricane', cursive;
 }
 
+.link-logo h3{
+    font-size: 2rem;
+    margin: 0px;
+    color: #1a1a1a;
+    text-decoration: none;
+}
+
 
 header{
     display: flex;
@@ -97,15 +104,16 @@ select{
     display: grid;
     grid-template-areas: "producto producto producto producto";
     padding: 30px 10px;
+    justify-content: space-around;
 }
 
 .producto{
-    width: 300px;
-    height: 455px;
+    width: 215px;
+    height: 380px;
     border-radius: 15px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    margin: 20px;
+    margin: 12px;
     text-align: center;
     transition: all 0.25s;
 }
@@ -121,10 +129,21 @@ select{
 
 .card{
     padding: 20px 3px;
+    margin: 0px;
 }
 
 .card-image img{
     width: 300px;
+}
+
+.card .card-image .card-title{
+    color: #1a1a1a;
+    padding: 0px;
+    position: inherit;
+}
+
+.card .card-content{
+    padding: 0px;
 }
 
 
@@ -225,12 +244,15 @@ select{
 
 .footer{
     display: flex;
-    margin: 2rem;
+    background-color:#E3E6F3;
+}
+
+.logo-footer{
+    font-family: 'Hurricane', cursive;
 }
 
 .link-rrpp{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -238,5 +260,17 @@ select{
 
 .list-link{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+}
+
+
+/* Single product */
+#prod-details .single-img{
+    width: 40%;
+    margin-right: 50px;
+}
+
+.small-group-img{
+    display: flex;
+    justify-content: space-between;
 }

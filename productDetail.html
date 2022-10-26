@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Product Details</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
@@ -19,11 +18,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!-- custom css -->
-    <link rel="stylesheet" href="/style.css">
-
-</head>
-
+    <link rel="stylesheet" href="/style.css"></head>
 <body>
+    
     <header>
         <div class="logo">
             <a class="link-logo" href="index.html"><h3>LOGO</h3></a>
@@ -48,49 +45,39 @@
                 <option value="Invisible Friends">Invisible Friends</option>
             </select>
         </div>
-        <main id="contenedor-productos">
 
-        </main>
-
-        <div class="modal-contenedor">
-            <div class="modal-carrito">
-                <h4>Carrito</h4>
-                <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
-                <div id="carrito-contenedor"></div>
-
-                <img src=`${producto.img}` alt="">
-                <p class="precioProducto">Precio total: $ <span id="precioTotal"></span></p>
-                <a href="./checkout.html"><button>Buy now</button></a>
+    <section id="prod-details" class="section-p1">
+        <div class="single-img">
+            <img src="https://lh3.googleusercontent.com/2PplRFyL3vnAF0EcuSnNBQlo-bkfGo8B-DZ3_wnVDd22Pbdrav_fEWuc7M9CtyDEQyqG-wN5sExBYbsbbYRJzTmkynA47UF6FRhFIg=w600" id="mainImg" width="100%" alt="">
+            <div class="small-group-img">
+                <div class="small-img-col">
+                    <img src="https://lh3.googleusercontent.com/8pSQDqVgCuRx0eZ666DwHlQPqppiRK95_45V-L_dhZbyREo0IIX0K6vNCsnqahKBrzG7Vjt6CfsojZx86PAorcthLeki4vNuBxmTQg=w600" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="https://lh3.googleusercontent.com/oGX9KC5HSLaNBtg3pNyJvlMca_YwhR3xvSllayk86pghLCOJkvbQ8DzNuiF2ZY-HU_ZzYayTZngFnp9kJdi8J140dtErziZcfu2jUw=w600" width="100%" class="mall-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="https://lh3.googleusercontent.com/-PwKyfcTNhTCiTWEff1prU-qPHunTYZfCsuJsZ_5Z_AFru6PT_cxPSYvUAuenHYQ46PU2Xq1umJqb0n1qgqXYO9Smcw_zcN2-jKL=w600" width="100%" class="mall-img" alt="">
+                </div>
+                <div class="small-img-col"> 
+                    <img src="https://lh3.googleusercontent.com/EE4wtZaiUGD01e9O1S34q403G9zlJ4ByPspsTFn5G85yx0iwWbv3fGRbfqMs2yorB3OjFqKvTL6rTtP3mkrOSVRixYvhyAlV3ikBRQ=w600" width="100%" class="mall-img" alt="">
+                </div>
             </div>
         </div>
+    </section>
 
-        <footer class="footer">
-            <div class="logo-footer">
-                <h3>LOGO</h3>
-            </div>
-            <div class="link-rrpp">
-                <ul class="list-link">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Shop</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
-            </div>
-        </footer>
-
-
-
-        <!-- custom sweet alert -->
-        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-        <!-- Compiled and minified JavaScript -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-        <!-- custom modal -->
-        <script src="modal.js"></script>
-        <!-- custom stock -->
-        <script src="stock.js"></script>
-        <!-- linkeo js -->
-        <script src="main.js"></script>
-
+    <footer class="footer">
+        <div class="logo-footer">
+            <h3>LOGO</h3>
+        </div>
+        <div class="link-rrpp">
+            <ul class="list-link">
+                <li><a href="">Home</a></li>
+                <li><a href="">Shop</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
-
 </html>

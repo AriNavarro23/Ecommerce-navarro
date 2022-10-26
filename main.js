@@ -73,7 +73,7 @@ function mostrarProductos (array) {
 }
 
 
-/*
+
 function agregarAlCarrito(id) {
     let repetido = carritoDeCompras.find(item => item.id == id)
     if(repetido){
@@ -130,6 +130,6 @@ recuperar()
 
 
 
-*/
+
 
 
